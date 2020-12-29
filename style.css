@@ -16,13 +16,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background-color: #ffffff;
-    padding: 20px 0;
-    width: 100vw;
-    justify-content: flex-end;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-}
+
 
 /*-------------------------
         TEXTOS
@@ -54,51 +48,24 @@ h2 {
     text-align: center;
 }
 
+h4 {
+     font-size: 45px;
+     text-align: center;
+ }
+
 h3 {
     font-size: 30px;
     color: #424242;
     margin: 90px 0 10px 0;
 }
 
-/*--------------------------------
-        NAV BAR GENERAL
-----------------------------------*/
-ul {
-    list-style-type: none;
-    align-items: flex-end;
+#textoPresentacion{
+     font-size: 3em;
 }
 
-a {
-    text-decoration: none;
-}
 
-a:hover {
-    font-weight: bold;
-}
 
-/*--------------------------------
-        NAV BAR HEADER
-----------------------------------*/
-.nav-header {
-    margin-right: 10%;
-    color: #483d8b;
-}
 
-.menu-header, .menu-proyectos, .menu-footer {
-    margin: 10px;
-    padding: 10px;
-}
-
-#icono-burger {
-    display: none;
-}
-
-.button {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-    padding: 10px 40px;
-}
 
 /*--------------------------------
     MENU DESPLEGABLE MOBILE
@@ -127,38 +94,11 @@ a:hover {
         DISPLAY FLEX
 ----------------------------------*/
 
-.seccion-hola, .contenedor-hola, .botonera-proyectos, ul, nav, .seccion-quote, .div-quote, .contenedor-proyectos, .seccion-footer, .div-contacto, header, .contenedor-skills, .seccion-skills {
+ .contenedor-skills, .seccion-skills {
     display: flex;
 }
 
-/*--------------------------------
-        SECCIÓN HOLA
-----------------------------------*/
 
-.seccion-hola {
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-hola {
-    width: 90%;
-    padding: 90px 30px 100px 30px;
-}
-
-.texto-hola {
-    width: 60%;
-    padding: 30px;
-}
-
-.img-hola {
-    width: 40%;
-}
-
-.p-hola {
-    text-align: left;
-    color: #607b82;
-    margin: 16px 0 40px 0;
-}
 
 /*--------------------------------
         SECCIÓN SKILLS
@@ -210,176 +150,78 @@ a:hover {
     font-size: 20px;
 }
 
-/*--------------------------------
-        SECCIÓN QUOTE
-----------------------------------*/
-.seccion-quote {
-    background: rgb(0,223,192);
-    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(33,60,56,1) 100%);
-    color: #fafafa;
-    padding: 100px 40px 100px;
-    justify-content: center;
-}
+/*-------------------------------
+          EXPERIENCIA
+--------------------------------*/
 
-.div-quote {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-.p-quote {
-    font-family: 'Allura';
-    font-size: 35px;
-    margin: 10px 100px;
-}
+.mywork {
+     position: relative;
+     
+ }
+ .mywork h2 {
+     font-size: 5em;
+ }
+ .works {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 10%; 
+     margin-top: 5em;
+     margin-bottom: 5em;
+ }
+ .work {
+     width: 31%;
+     height: 15vw;
+     position: relative;
+     overflow: hidden;
+     
+     border-radius: 20px;
+     background-color: #1c2355;
+     color: white;
+     font-size: 1em;
+ }
+ .work img {
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     cursor: default;
+     
+ }
+ .work:hover img {
+     transition: all .5s;
+     opacity: 0;
+ }
+ .work:hover .project-info{
+     z-index: 1;
+ }
+ .project-info {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     opacity: 1;
+     z-index: -1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 20px;
+ }
+ .project-info a {
+     padding: 10px;
+     border-radius: 20px;
+     border: 1px solid var(--primary);
+     color: white;
+     margin: 10px;
+ }
+ .project-info a:hover {
+     background-color: var(--primary);
+     transition: all .5s;
+ }
 
-.h3-quote {
-    font-family: 'Allura';
-    font-size: 60px;
-    color: #fafafa;
-    padding-bottom: 20px;
-    font-weight: normal;
-}
 
-.img-quote {
-    width: 15%;
-    padding-bottom: 80px;
-}
 
-.ico-quote {
-    font-size: 80px;
-    margin-bottom: 60px;
-}
-
-/*--------------------------------
-        SECCIÓN PROYECTOS
-----------------------------------*/
-.seccion-proyectos {
-    background-color: #d3faf526;
-    padding: 45px;
-}
-
-/* -- MENÚ -- */
-.botonera-proyectos {
-    justify-content: center;
-    padding: 20px 0;
-    margin: 20px auto 10px auto;
-}
-
-.menu-proyectos {
-    font-size: 16px;
-    background-color: #d3faf526;
-    border: none;
-    padding: 15px 40px;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: 0.4s;
-}
-
-.menu-proyectos:hover {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-    padding: 10px 40px;
-    cursor: pointer;
-}
-
-.buttonClicked {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-}
-
-.menu-proyectos:focus {
-    background-color: #007b67;
-    border-radius: 25px;
-    color: #d3faf5;
-}
-
-/* -- CAJA DE TARJETAS -- */
-.contenedor-proyectos {
-    display: flex;
-    margin-top: 40px;
-    padding: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* -- CAJA DE CADA TARJETA -- */
-.proyectos {
-    background-color: #fafafa;
-    border: 1px #dddfe5 solid;
-    border-radius: 10px;
-    width: 330px;
-    height: 287px;
-    margin: 10px;
-    padding: 30px;
-    color: #2e2e31;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.img-proyectos {
-    margin: 5px 35px 5px 35px;
-    object-position: center;
-}
-
-.h2-proyectos {
-    margin-top: 100px;
-}
-
-.p-titulo-proyectos {
-    font-weight: 700;
-    font-size: 16px;
-    margin-top: 0;
-}
-
-/*--------------------------------
-            FOOTER
-----------------------------------*/
-.seccion-footer {
-    background-color: #009c86;
-    padding: 45px;
-    flex-direction: column;
-}
-
-/* -- MENÚ -- */
-.nav-footer {
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    margin: 10px auto 10px auto;
-}
-
-.menu-footer {
-    font-size: 14px;
-    color: #00dfc0;
-}
-
-/* -- LOGOS -- */
-.div-contacto {
-    justify-content: center;
-}
-
-.img-contacto {
-    width: 80px;
-    padding: 10px;
-    margin: 10px;
-    transition: 0.3s;
-}
-
-.img-contacto:hover {
-    /*decidir efecto*/
-}
-
-/* -- TEXTO -- */
-.span-footer {
-    color: #fafafa;
-}
-
-.amor {
-    color: #00dfc0;
-    font-size: 18px;
-}
 
 
 /*-------------------------
@@ -387,40 +229,7 @@ a:hover {
 -------------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
 
-    /*--------------------------------
-            NAV BAR HEADER
-    ----------------------------------*/
-
-    .nav-header {
-        margin-right: 5%;
-    }
-   
-    .menu-header {
-        font-size: 16px;
-    }
-   
-    /*--------------------------------
-            SECCIÓN HOLA
-    ----------------------------------*/
-
-    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-hola {
-        flex-wrap: wrap;
-    }
-
-    .texto-hola {
-        padding: 5px;
-        width: 100vw;
-    }
-
-    .img-hola {
-        width: 70%;
-        margin-top: 20px;
-    }
+    
 
     /*-------------------------
             TEXTOS
@@ -452,15 +261,15 @@ a:hover {
     }
 
     /*--------------------------------
-            SECCIÓN PROYECTOS
+            EXPERIENCIA
     ----------------------------------*/
 
-    /* -- CAJA DE TARJETAS -- */
+    .work {
+     width: 45%;
+     height: 20vw;
+ }
 
-    .contenedor-proyectos {
-        padding-left: 0;
-        padding-right: 0;
-    }
+ 
 
 }
 
@@ -469,48 +278,7 @@ a:hover {
 -------------------------*/
 @media (max-width: 599px) {
 
-    /*--------------------------------
-            NAV BAR HEADER
-    ----------------------------------*/
-
-    #ul-header {
-        display: none;
-    }
-
-    #icono-burger {
-        display: block;
-        font-size: 30px;
-        color: #007b67;
-    }
-
-    /*--------------------------------
-            SECCIÓN HOLA
-    ----------------------------------*/
-
-    .seccion-hola, .contenedor-hola, .texto-hola, .texto-hola ul {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-hola {
-        flex-wrap: wrap;
-        margin-top: 0;
-        padding: 0 0 30px 0;
-    }
-
-    .texto-hola {
-        padding: 5px;
-        width: 100vw;
-    }
-
-    .img-hola {
-        width: 70%;
-        margin: 20px;
-    }
-    
-    .p-hola, h1, h3 {
-        text-align: center;
-    }
+ 
 
     /*--------------------------------
             TEXTOS
@@ -543,83 +311,25 @@ a:hover {
         margin: 10px;
         font-size: 16px;
     }
-    
-    /*--------------------------------
-            SECCIÓN QUOTE
-    ----------------------------------*/
-    .p-quote {
-        margin: 10px 50px;
-    }
-
-    .h3-quote {
-        font-size: 50px;
-    }
 
     /*--------------------------------
-            SECCIÓN PROYECTOS
+            EXPERIENCIA
     ----------------------------------*/
-    .seccion-proyectos {
-        padding-left: 10px;
-        padding-right: 10px; 
-    }
+
+    .work {
+     width: 100%;
+     height: 40vw;
+ }
     
-    .botonera-proyectos {
-        padding-top: 10px;
-        padding-bottom: 0;
-        flex-wrap: wrap;
-    }
-    
-    /* -- MENÚ -- */
-    .menu-proyectos {
-        font-size: 14px;
-    }
-
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-proyectos {
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 5px;
-    }
-    
-    /* -- CAJA DE CADA TARJETA -- */
-    .proyectos {
-        width: 230px;
-        height: 230px;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    /*--------------------------------
-                FOOTER
-    ----------------------------------*/
-    /* -- MENÚ -- */
-    .nav-footer {
-        display: none
-    }
-
-    .img-contacto {
-        width: 55px;
-    }
-
-    .amor {
-        font-size: 14px;
-    }
 
 }
 
-/*-------------------------
-    BÚSQUEDAS Y FILTROS
--------------------------*/
-.hidden {
-    display: none;
-}
 
 
 /*-------------------------
     PALETA DE COLORES
 -------------------------*/
 
-/*Male acá armé la paleta de colores, simulando una clase, para tener todos los códigos HEX/RGB juntos*/
 
 .cupetín-de-colores {
     color: #009c86; /*pc*/
@@ -633,7 +343,3 @@ a:hover {
     color: rgb(64,81,85); /*gris oscuro*/
     color: #a8f0df; /*teal muy clarito*/
 }
-
-/*-------------------------
-        @Luzyla
--------------------------*/
