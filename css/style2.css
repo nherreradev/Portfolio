@@ -47,9 +47,6 @@
  }
 
  
- 
-
-
 
  *{
      font-family: 'Roboto Condensed', sans-serif;
@@ -61,11 +58,6 @@
  body {
      margin: 0;
  }
- 
- 
- 
-
- 
  
  
 
@@ -344,3 +336,103 @@
 
 
  }
+
+
+ .contenedor-skills, .seccion-skills {
+    display: flex;
+}
+
+
+/*--------------------------------
+        SECCIÓN SKILLS
+----------------------------------*/
+
+.seccion-skills {
+    background-color: #d3faf540;
+    padding: 45px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* -- CAJA DE TARJETAS -- */
+.contenedor-skills {
+    width: 80%;
+    margin-top: 40px;
+    padding: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* -- CAJA DE CADA TARJETA -- */
+.skills {
+    background-color: #fafafa;
+    border: 1px #dddfe5 solid;
+    border-radius: 10px;
+    width: 260px;
+    height: 229px;
+    margin: 10px;
+    padding: 30px;
+    color: #2e2e31;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-skills { 
+    margin: 20px 60px 20px 60px;
+}
+
+.texto-skills {
+    padding: 10px 220px;
+}
+
+.h2-skills {
+    margin-top: 100px;
+}
+
+.p-titulo-skills {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*--------------------------------
+        SECCIÓN QUOTE
+----------------------------------*/
+.seccion-quote {
+    background: rgb(0,223,192);
+    background: linear-gradient(180deg, rgba(0,223,192,1) 0%, rgba(27,70,61,1) 94%, rgba(33,60,56,1) 100%);
+    color: #fafafa;
+    padding: 100px 40px 100px;
+    justify-content: center;
+}
+
+.div-quote {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-quote {
+    font-family: 'Allura';
+    font-size: 35px;
+    margin: 10px 100px;
+}
+
+.h3-quote {
+    font-family: 'Allura';
+    font-size: 60px;
+    color: #fafafa;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
+.img-quote {
+    width: 15%;
+    padding-bottom: 80px;
+}
+
+.ico-quote {
+    font-size: 80px;
+    margin-bottom: 60px;
+}
+
+
+
