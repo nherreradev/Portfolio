@@ -192,6 +192,7 @@ h3 {
      padding: 0 10%; 
      margin-top: 5em;
      margin-bottom: 5em;
+     justify-content: space-around;
  }
  .work {
      width: 31%;
@@ -293,6 +294,11 @@ h3 {
      height: 20vw;
  }
 
+ .works div{
+    margin-top: 2em;
+}
+
+
  
 
 }
@@ -344,6 +350,11 @@ h3 {
      width: 100%;
      height: 40vw;
  }
+
+ .works div{
+    margin-top: 2em;
+}
+
     
 
 }
