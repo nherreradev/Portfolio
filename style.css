@@ -1,396 +1,314 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-
-
-html {
-    scroll-behavior: smooth;
-    
-}
-
-body {
-    color: #2e2e31;
-    
-    font-family: 'Montserrat', 'sans serif';
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-
-/*-------------------------
-        TEXTOS
--------------------------*/
-
-p {
-    text-align: center;
-    margin: 20px 0;
-}
-
-h1, h3 {
-    text-align: left;
-}
-
-h1 {
-    font-family: 'Allura';
-    font-weight: 900;
-    font-size: 75px;
-    color: #009c86;
-    text-shadow: 2px 2px 4px #42424280;
-}
-
-h2, h3 {
-    font-weight: 900;
-}
-
-h2 {
-    font-size: 45px;
-    text-align: center;
-}
-
-h4 {
-     font-size: 45px;
-     text-align: center;
- }
-
-h3 {
-    font-size: 30px;
-    color: #424242;
-    margin: 90px 0 10px 0;
-}
-
-#textoPresentacion{
-     font-size: 3em;
-}
-
-
-
-
-
-/*--------------------------------
-    MENU DESPLEGABLE MOBILE
-----------------------------------*/
-.contenedor-barra-mobile {
-    display: flex;
-    z-index: 1;
-    position: absolute;
-    top: -250px;
-    right: 0;
-    transition: 1s;
-}
-
-.barra-mobile {
-    background-color: rgba(250, 250, 250, 0.6);
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-desplegado {
-    right: 0;
-    top: 70px;
-}
-
-/*--------------------------------
-        DISPLAY FLEX
-----------------------------------*/
-
- .contenedor-skills, .seccion-skills {
-    display: flex;
-}
-
-/*--------------------------------
-        SECCIÓN PRESENTACION
-----------------------------------*/
-
-.presentacion{
-    background-color: #d3faf540;
-}
-
-/*--------------------------------
-    SECCIÓN ACERCA DE MI PERSONA
-----------------------------------*/
-
-.acercaDeMiPersona{
-
-    background-color: #d3faf540;
-    padding: 2em;
-
-}
-
-
-
-
-/*--------------------------------
-        SECCIÓN TECNOLOGIAS
-----------------------------------*/
-
-.seccion-skills {
-    background-color: #d3faf540;
-    padding: 45px;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* -- CAJA DE TARJETAS -- */
-.contenedor-skills {
-    width: 80%;
-    margin-top: 40px;
-    padding: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* -- CAJA DE CADA TARJETA -- */
-.skills {
-    background-color: #fafafa;
-    border: 1px #dddfe5 solid;
-    border-radius: 10px;
-    width: 260px;
-    height: 229px;
-    margin: 10px;
-    padding: 30px;
-    color: #2e2e31;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.img-skills { 
-    margin: 20px 60px 20px 60px;
-}
-
-.texto-skills {
-    padding: 10px 220px;
-}
-
-.h2-skills {
-    margin-top: 100px;
-}
-
-.p-titulo-skills {
-    font-weight: 700;
-    font-size: 20px;
-}
-
-/*--------------------------------
-        SECCIÓN EDUCACION
-----------------------------------*/
-
-.educacion{
-    margin-top: -1.5em;
-    background-color: #d3faf540;
-}
-
-/*-------------------------------
-          EXPERIENCIA
---------------------------------*/
-
-
-.mywork {
-     position: relative;
-     background-color: #d3faf540;
-     margin-top: -1.5em;
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      
- }
- .mywork h2 {
-     font-size: 5em;
- }
- .works {
-     display: flex;
-     flex-wrap: wrap;
-     padding: 0 10%; 
-     margin-top: 5em;
-     margin-bottom: 5em;
-     justify-content: space-around;
- }
- 
- .work {
-     width: 31%;
-     height: 15vw;
-     position: relative;
-     overflow: hidden;
+
      
-     border-radius: 20px;
-     background-color: #1c2355;
-     color: white;
-     font-size: 1em;
- }
- .work img {
-     object-fit: cover;
-     width: 100%;
-     height: 100%;
-     cursor: default;
+     <title>Nicolas Herrera :)</title>
+
+</head>
+<body>
+
+
+     <nav class="#ffa726 orange lighten-1" role="navigation">
+          <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+               <li><a   href="#a-tecnologias">Tecnologias</a></li>
+               <li><a   href="#a-educacion">Educacion</a></li>
+               <li><a   href="#a-experiencia">Experiencia</a></li>
+               <li><a   href="#a-experiencia">Contacto</a></li>
+            </ul>
+      
+            <ul id="nav-mobile" class="sidenav">
+               <li><a   href="#a-tecnologias">Tecnologias</a></li>
+               <li><a   href="#a-educacion">Educacion</a></li>
+               <li><a   href="#a-experiencia">Experiencia</a></li>
+               <li><a   href="#a-experiencia">Contacto</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
+
      
- }
- .work:hover img {
-     transition: all .5s;
-     opacity: 0;
- }
- .work:hover .project-info{
-     z-index: 1;
- }
- .project-info {
-     position: absolute;
-     height: 100%;
-     width: 100%;
-     top: 0;
-     left: 0;
-     opacity: 1;
-     z-index: -1;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column;
-     padding: 20px;
- }
- .project-info a {
-     padding: 10px;
-     border-radius: 20px;
-     border: 1px solid var(--primary);
-     color: white;
-     margin: 10px;
- }
- .project-info a:hover {
-     background-color: var(--primary);
-     transition: all .5s;
- }
+
+     <!-- PRESENTACION -->
+
+     
+     <section class="presentacion">
+
+
+     
+
+     <div class="section no-pad-bot " id="index-banner">
+          <div class="container">
+            
+            <div class="row center">
+      
+              <div><img src="imagenes/big-gear.png" alt="" width="82em"></div>
+              
+            </div>
+
+            <div class="row center">
+      
+              <div class="col s4"><img src="imagenes/script-de-computacion.png" alt="" width="82em"></div>
+              <div class="col s4"><p class="flow-text">Nicolas Herrera</p></div>
+              <div class="col s4"><img src="imagenes/nube.png" alt="" width="82em"></div>
+            </div>
+    
+            
+            
+                  
+            <div class="row center ">
+              <img src="imagenes/linkedinFoto.jpg" style="border-radius: 50%;" alt="">
+            </div>
 
 
 
+            <div class="row center">
+      
+              <div class="col s4"><img src="imagenes/en-todo-el-mundo.png" alt="" width="82em"></div>
+              <div class="col s4"><p class="flow-text">Full-stack Web Developer</p></div>
+              <div class="col s4"><img src="imagenes/app.png" alt="" width="82em"></div>
+            </div>
+    
+    
+    
+            
+            
+      
+            <br><br>
+      
+          </div>
+        </div>
+
+      </section>
 
 
-/*-------------------------
-    @MEDIA TABLETS
--------------------------*/
-@media (min-width: 600px) and (max-width: 900px) {
+    <!-- ACERCA DE MI -->
+
+    <section class="acercaDeMiPersona">
+
+      <h4 id="a-sobreMi">Acerca de mi</h4>
+
+      <p class="flow-text">Hola, mi nombre es Nicolas Herrera. Comencé a estudiar programación a mediados de 2015. Si bien siempre estuve relacionado e interesado en la tecnología, ya que antes de aprender a programar estudié microinformática y redes, fue al experimentar con la programación cuando descubrí mi verdadera vocación. Aunque estoy estudiando en la Universidad, me considero alguien autodidacta que siempre está intentando aprender cosas nuevas. Me gusta trabajar en equipo y llevar adelante un proyecto entre colegas, discutiendo sobre cómo mejorar el código o que funcionalidad agregar. Intento siempre estar bien predispuesto, y hacer las cosas lo mejor posible. </p>
+
+
+    </section>
+
+
+     <!-- SKILLS -->
 
     
 
-    /*-------------------------
-            TEXTOS
-    -------------------------*/
 
-    .p-hola, h1, h3 {
-        text-align: center;
-    }
+     
 
-    h1 {
-        font-size: 72px;
-    }
+<section class="seccion-skills" id="a-skills">
 
-    h3 {
-        font-size: 25px;
-    }
+  <h4 id="a-tecnologias">Tecnologias manejadas</h4>
+     
 
-    /*--------------------------------
-            SECCIÓN SKILLS
-    ----------------------------------*/
+  
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 100%;
-    }
+  
 
-    .texto-skills {
-        padding: 10px 100px;
-    }
-
-    /*--------------------------------
-            EXPERIENCIA
-    ----------------------------------*/
-
-    .work {
-     width: 45%;
-     height: 20vw;
- }
-
- .works div{
-    margin-top: 2em;
-
-}
+  
 
 
+     <div class="contenedor-skills">
+
+          <div class="skills">
+               <img width="78px" class="img-skills" src="logos/kisspng-php-computer-icons-tonic-vector-5b0302dae71bc6.4091915415269239949466.png" alt="PHP" />
+               <p class="p-titulo-skills">PHP</p>
+           </div>
+
+           <div class="skills">
+               <img class="img-skills" src="logos/java-svgrepo-com.svg" alt="Java" />
+               <p class="p-titulo-skills">Java</p>
+           </div>
+
+           <div class="skills">
+               <img class="img-skills" src="logos/spring-3.svg" alt="Spring" />
+               <p class="p-titulo-skills">Spring</p>
+           </div>
+
+           <div class="skills">
+               <img class="img-skills" src="logos/hibernate.svg" alt="Hibernate" />
+               <p class="p-titulo-skills">Hibernate</p>
+           </div>
+
+           <div class="skills">
+               <img class="img-skills" src="logos/mysql-6.svg" alt="MySQL" />
+               <p class="p-titulo-skills">MySQL</p>
+           </div>
+
+           <div class="skills">
+               <img class="img-skills" src="logos/javascript.svg" alt="JavaScript" />
+               <p class="p-titulo-skills">JavaScript</p>
+           </div>
+  
+
+         <div class="skills">
+             <img class="img-skills" src="logos/html5.svg" alt="HTML5" />
+             <p class="p-titulo-skills">HTML 5</p>
+         </div>
+     
+         <div class="skills">
+             <img class="img-skills" src="logos/css3.svg" alt="CSS3" />
+             <p class="p-titulo-skills">CSS 3</p>
+         </div>
+
+         
+         <div class="skills">
+             <img class="img-skills" src="logos/git.svg" alt="GIT" />
+             <p class="p-titulo-skills">GIT</p>
+         </div>
+
+         
+
+      <div class="skills">
+          <img class="img-skills" src="logos/mustache.svg" alt="Mustache" />
+          <p class="p-titulo-skills">Mustache</p>
+      </div>
+
+      
+
+      
+
+
+     </div>
+
+ </section>
+
+
+
+ <!-- EDUCACION -->
+
+ <section class="educacion">
+
+ <h4 id="a-educacion">Educacion</h4>
+
+ <div class="container">
+     <div class="section">
  
-
-}
-
-/*-------------------------
-    @MEDIA CELULARES
--------------------------*/
-@media (max-width: 599px) {
-
+       <!--   Icon Section   -->
+       <div class="row">
+         <div class="col s12 m4">
+           <div class="icon-block">
+             <h2 class="center light-blue-text"><i class="material-icons">account_balance</i></h2>
+             <h5 class="center">Universidad Nacional de la Matanza</h5>
  
+             <p class="light">Actualmente cursando la tecnicatura en desarrollo web. En el tiempo cursado pude desarrollar habilidades en programacion orientada a objetos, bases de datos relacionales, manejo de frameworks, herramientas de versionado y trabajo en equipo entre otras. </p>
+           </div>
+         </div>
+ 
+         <div class="col s12 m4">
+           <div class="icon-block">
+             <h2 class="center light-blue-text"><i class="material-icons">account_balance</i></h2>
+             <h5 class="center">Facultad Ejercito Argentino</h5>
+ 
+             <p class="light">Curso de programacion java (programa 111 mil). En este periodo desarrolle habilidades en programacion orientada a objetos, modelado UML, manejo del framework Hibernate y trabajo en equipo.</p>
+           </div>
+         </div>
+ 
+         <div class="col s12 m4">
+           <div class="icon-block">
+             <h2 class="center light-blue-text"><i class="material-icons">account_balance</i></h2>
+             <h5 class="center">Platzi</h5>
+             <br>
+ 
+             <p class="light">Curso Java EE. En este curso incorpore conocimientos relacionados a spring framework, programacion orientada a objetos y manejo de bases de datos relacionales.</p>
+           </div>
+         </div>
+       </div>
+ 
+     </div>
+     <br><br>
+   </div>
 
-    /*--------------------------------
-            TEXTOS
-    ----------------------------------*/   
+  </section>
 
-    h1 {
-        font-size: 60px;
-    }
+   <!-- EXPERIENCIA -->
 
-    h3 {
-        font-size: 20px;
-    }
 
-    h2 {
-        font-size: 30px;
-    }
 
-    /*--------------------------------
-            SECCIÓN SKILLS
-    ----------------------------------*/
+   
+   <section class="mywork">
+    <h4 id="a-experiencia">Experiencia</h4>
+     
 
-    /* -- CAJA DE TARJETAS -- */
-    .contenedor-skills {
-        width: 100%;
-        padding: 5px;
-    }
+     <article class="works">
+         
+          <div class="work">
+               <a href="https://logistica-unlam.herokuapp.com/" target="_blank"><img src="imagenes/logisticaLogo.jpg" alt="" srcset=""></a>
+             <div class="project-info">
+                 <p>Sistema para logistica de camiones</p>
+                 <a href="https://logistica-unlam.herokuapp.com/" target="_blank">Visitar Web</a>
+             </div>      
+         </div>
+         
+         <div class="work">
+          <a href="https://nherreradev.github.io/Anotador/" target="_blank"><img src="imagenes/libretaLogo.jpg" alt="" ></a>
+          <div class="project-info">
+              <p> Anotador on line </p>
+              <a href="https://nherreradev.github.io/Anotador/" target="_blank">Visitar Web</a>
+          </div>   
+         </div>
 
-    .texto-skills {
-        padding: 10px 10px;
-        margin: 10px;
-        font-size: 16px;
-    }
+         
+     </article>
+    
+ </section>
 
-    /*--------------------------------
-            EXPERIENCIA
-    ----------------------------------*/
+<!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
 
-    .work {
-     width: 100%;
-     height: 40vw;
- }
+     
+</body>
+</html>
 
- .works div{
-    margin-top: 2em;
+  <script src="https://kit.fontawesome.com/3f15c8a6ac.js" crossorigin="anonymous"></script>
 
-}
 
+  <section>
+
+    <!-- FOOTER -->
+
+    <footer class="#ffa726 orange lighten-1">
     
 
-}
+      <div class="div-contacto" id="a-contacto">
+          <a target="_blank" href="https://github.com/nherreradev">
+              <img class="img-contacto" src="iconos/github.png" />
+          </a>
+          
+          <a target="_blank" href="https://www.linkedin.com/in/nicolas-herrera-95365b169/">
+              <img class="img-contacto" src="iconos/linkedin.png" />
+          </a>
+          
+          <a target="_blank" href="mailto:nherrera3276@gmail.com">
+              <img class="img-contacto" src="iconos/cerrar-sobre.png" />
+          </a>
+          
+          
+
+      </div>
 
 
 
-/*-------------------------
-    PALETA DE COLORES
--------------------------*/
+  </section>
+  
 
 
-.cupetín-de-colores {
-    color: #009c86; /*pc*/
-    color: #007b67; /* rgb(0,123,103); 006754; /*pad*/
-    color: #607b82; /* rgb(96,123,130); /*pantalla*/
-    color: #00dfc0; /* rgb(0,223,192); /*iconos laterales*/
-    color: #d3faf5; /*data bases*/
-    color: #483d8b; /*violeta complementario*/
-    color: rgb(0,128,128);
-    color: rgb(19,81,68); /*verde oscuro*/
-    color: rgb(64,81,85); /*gris oscuro*/
-    color: #a8f0df; /*teal muy clarito*/
-}
+
+
 
 
