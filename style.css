@@ -11,6 +11,7 @@ html {
 body {
     color: #2e2e31;
     
+    
     font-family: 'Montserrat', 'sans serif';
 }
 
@@ -174,6 +175,10 @@ h3 {
     font-size: 20px;
 }
 
+#tituloSQL{
+    margin-top: -0.2em;
+}
+
 /*--------------------------------
         SECCIÓN EDUCACION
 ----------------------------------*/
@@ -202,7 +207,7 @@ h3 {
      flex-wrap: wrap;
      padding: 0 10%; 
      margin-top: 5em;
-     margin-bottom: 5em;
+     padding-bottom: 5em;
      justify-content: space-around;
  }
  
@@ -396,5 +401,8 @@ h3 {
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 42d1d41e54bff1e586c156e129ffa8e0a1cea98f
 
